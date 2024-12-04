@@ -1,0 +1,34 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "hightainment37733d4d",
+  "functionName": "hightainment37733d4dPostConfirmation",
+  "resourceName": "hightainment37733d4dPostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "/snapshot/amplify-cli/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "hightainment37733d4dPostConfirmation",
+  "skipEdit": true,
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "rdsHost",
+      "environmentVariableName": "RDS_HOST"
+    },
+    {
+      "cloudFormationParameterName": "rdsUsername",
+      "environmentVariableName": "RDS_USERNAME"
+    },
+    {
+      "cloudFormationParameterName": "rdsPassword",
+      "environmentVariableName": "RDS_PASSWORD"
+    },
+    {
+      "cloudFormationParameterName": "databaseName",
+      "environmentVariableName": "DATABASE_NAME"
+    }
+  ]
+}

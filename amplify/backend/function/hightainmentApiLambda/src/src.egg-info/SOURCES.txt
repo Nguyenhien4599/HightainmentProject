@@ -1,0 +1,10 @@
+index.py
+setup.py
+data/data_gateway.py
+data/justwatch_client.py
+data/models.py
+data/tmdb_client.py
+src.egg-info/PKG-INFO
+src.egg-info/SOURCES.txt
+src.egg-info/dependency_links.txt
+src.egg-info/top_level.txt

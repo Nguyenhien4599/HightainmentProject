@@ -1,0 +1,29 @@
+.custom-item-filter-search::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    z-index: 1;
+}
+.custom-datepicker::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #bbb;
+}
+
+.wrap-item > div:last-of-type {
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: unset;
+    z-index: 30;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .custom-item-filter-search::after {
+        display: none;
+    }
+}

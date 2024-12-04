@@ -1,0 +1,30 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "rdsUsername",
+      "environmentVariableName": "RDS_USERNAME"
+    },
+    {
+      "cloudFormationParameterName": "rdsPassword",
+      "environmentVariableName": "RDS_PASSWORD"
+    },
+    {
+      "cloudFormationParameterName": "rdsHost",
+      "environmentVariableName": "RDS_HOST"
+    },
+    {
+      "cloudFormationParameterName": "rdsPort",
+      "environmentVariableName": "RDS_PORT"
+    },
+    {
+      "cloudFormationParameterName": "databaseName",
+      "environmentVariableName": "DATABASE_NAME"
+    },
+    {
+      "cloudFormationParameterName": "tmdbApiKey",
+      "environmentVariableName": "TMDB_API_KEY"
+    }
+  ],
+  "permissions": {}
+}

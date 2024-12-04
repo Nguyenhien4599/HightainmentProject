@@ -1,0 +1,233 @@
+{
+  "api": {
+    "hightainmentRestAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "hightainment37733d4d": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "hightainment37733d4dPostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hightainmentApiLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_hightainment37733d4dPostConfirmation_databaseName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainment37733d4dPostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainment37733d4dPostConfirmation_rdsHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainment37733d4dPostConfirmation_rdsPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainment37733d4dPostConfirmation_rdsUsername": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainment37733d4dPostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainment37733d4dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_databaseName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_rdsHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_rdsPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_rdsPort": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_rdsUsername": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentApiLambda_tmdbApiKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentApiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_hightainmentLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hightainmentLambda"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "HightainmentFiles": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    },
+    "hightainment": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

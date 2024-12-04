@@ -1,0 +1,22 @@
+{
+  "resourceName": "hightainment",
+  "tableName": "contents",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "year_released",
+    "fieldType": "number"
+  },
+  "gsi": [
+    {
+      "name": "name",
+      "partitionKey": {
+        "fieldName": "name",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

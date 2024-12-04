@@ -1,0 +1,59 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hightainment-prod-84425-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725313832:role/amplify-hightainment-prod-84425-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725313832:role/amplify-hightainment-prod-84425-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-hightainment-prod-84425-deployment",
+      "UnauthRoleName": "amplify-hightainment-prod-84425-unauthRole",
+      "StackName": "amplify-hightainment-prod-84425",
+      "StackId": "arn:aws:cloudformation:us-east-1:851725313832:stack/amplify-hightainment-prod-84425/44b151f0-42da-11ef-a044-12a09ea5ab03",
+      "AmplifyAppId": "d1jdwpqozlsmid",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-hightainment-prod-84425-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-hightainment-prod-84425-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "hightainment37733d4d": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1jdwpqozlsmid",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "hightainmentRestAPI": {}
+      },
+      "storage": {
+        "hightainment": {},
+        "HightainmentFiles": {}
+      },
+      "function": {
+        "hightainmentLambda": {
+          "deploymentBucketName": "amplify-hightainment-prod-84425-deployment",
+          "s3Key": "amplify-builds/hightainmentLambda-704a4b4f734846474e45-build.zip"
+        },
+        "hightainmentApiLambda": {
+          "deploymentBucketName": "amplify-hightainment-prod-84425-deployment",
+          "s3Key": "amplify-builds/hightainmentApiLambda-53665035725545793851-build.zip",
+          "rdsUsername": "admin",
+          "rdsPassword": "M9l$Q8gT7%vX5&nK4#pF6^bC2!wR1*Z3jHdL0",
+          "rdsHost": "hightainment-serverless-1.cluster-c1uwo48uiuvj.us-east-1.rds.amazonaws.com",
+          "rdsPort": "3306",
+          "databaseName": "hightainment",
+          "tmdbApiKey": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyOTYwNzc3ZDhjZjY5YmI3ZDFhNDM4NWYzM2JiZjY5MiIsIm5iZiI6MTcyMzk1NTU0OS4yMDE1ODcsInN1YiI6IjY2OTYxZTA4OTg5NDQ1YjVmZjgwNzdlOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IXtcL_Hsn20KezZhocjsrfKAOr8nnY-6dgBikEfelo0"
+        },
+        "hightainment37733d4dPostConfirmation": {
+          "deploymentBucketName": "amplify-hightainment-prod-84425-deployment",
+          "s3Key": "amplify-builds/hightainment37733d4dPostConfirmation-4e51566331524f684738-build.zip",
+          "rdsHost": "htm-rds-proxy.proxy-c1uwo48uiuvj.us-east-1.rds.amazonaws.com",
+          "rdsUsername": "proxy",
+          "rdsPassword": "&A9fL2#tV5pQ!wZ8R@jK6%uN4^cH1xS3$bY",
+          "databaseName": "hightainment"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.header-carousel > button:disabled {
+    background-color: #666666;
+}
+
+.header-carousel > button:disabled > svg > path {
+    fill: #999999;
+}
